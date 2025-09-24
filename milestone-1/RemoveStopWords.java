@@ -7,6 +7,7 @@ public class RemoveStopWords
     {
         ArrayList<String> stopWords = new ArrayList<>();
         Scanner scan = new Scanner(new File(stopWordsTxt));
+        
         while (scan.hasNextLine())
         {
             String stopWord = scan.nextLine().trim().toLowerCase();
@@ -18,6 +19,11 @@ public class RemoveStopWords
     
     public static void main(String[] args)
     {
+        String stopWordsPath = "stopwords.txt";
+        ArrayList<String> stopWords = createStopWordsList(stopWordsPath);
+
+        String[] articles = {};
+
         
     }
 }

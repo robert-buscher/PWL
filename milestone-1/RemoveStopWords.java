@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class RemoveStopWords
 {
@@ -47,7 +49,7 @@ public class RemoveStopWords
         {
             String stopWordsPath = "stopwords.txt";
             ArrayList<String> stopWords = createStopWordsList(stopWordsPath);
-            String[] articlePaths = {topic2article1.txt}; // add file names here
+            String[] articlePaths = {}; // add file names here
 
             for (String article : articlePaths) 
             {

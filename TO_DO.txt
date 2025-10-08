@@ -1,0 +1,6 @@
+ORDERED:
+1.) Finish FrequencyRankings
+2.) Find and input all articles
+3.) Make a main that takes a TOPIC of the user's choice (one at a time) and preprocesses all the articles in that topic using all of our classes
+4.) Finish READ ME
+5.) Make UML Class Diagram

@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,10 +6,10 @@ public class Main
 {
     public static void main(String[] args) 
     {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter topic folder path: ");
-        String folderPath = input.nextLine().trim();
+        String folderPath = sc.nextLine().trim();
         File folder = new File(folderPath);
         if (!folder.exists() || !folder.isDirectory()) 
         {

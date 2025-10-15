@@ -14,6 +14,6 @@
 - **Step 1** -- Download Zip File
 - **Step 2** -- Using your choice of IDE, Run the Main Class
 - **Step 3** -- Enter file path
--- **Examples**:
+- **Examples**:
 - **macOS**: /Users/rj/Documents/PWL-main/txtFiles/topic1
 **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1

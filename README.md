@@ -11,7 +11,7 @@
 ### **Main**: runs the program for one topic folder, calling the other three classes.
 
 ## How to Run:
-#### Step 1** -- Download Zip Files
+#### **Step 1** -- Download Zip Files
 #### **Step 2** -- Using your choice of IDE, Run Main Class
 #### **Step 3** -- Enter file path
 #### **Examples**:

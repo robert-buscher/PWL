@@ -1,7 +1,1 @@
-ORDERED:
-XXX 1.) Finish FrequencyRankings
-XXX 2.) Find and input all articles
-XXX 3.) Make a main that takes a TOPIC of the user's choice (one at a time) and preprocesses all the articles in that topic using all of our          classes
-XXX 4.) Finish READ ME
- - All completed except for description of methods
-5.) Make UML Class Diagram
+

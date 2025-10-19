@@ -17,3 +17,5 @@
 - **Examples**:
 - **macOS**: /Users/rj/Documents/PWL-main/txtFiles/topic1
 **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1
+
+![Screenshot 2025-10-15 at 1 05 07 PM 3](https://github.com/user-attachments/assets/fb5dcd9a-0071-434b-9079-866222d56b1f)

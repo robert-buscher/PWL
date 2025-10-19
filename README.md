@@ -1,7 +1,7 @@
 # Programming Workshop Lab
 
 ## Team
-### **Robert Buscher**: Main.java, FrequencyRanking.java
+### **Robert Buscher**: Main.java, FrequencyRanking.java, ReadMe
 ### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, UML diagram
 
 ## Classes and Methods

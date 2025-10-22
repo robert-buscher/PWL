@@ -2,13 +2,16 @@
 
 ## Team
 ### **Robert Buscher**: Main.java, FrequencyRanking.java, RichVocab.java, README.md
-### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, AttitudeScorer.java, UML diagram
+### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, AttitudeScorer.java, RepeatWords.java, UML diagram
 
 ## Classes and Methods
+- **Main**: runs the program for one topic folder, calling the other three classes.
 - **RemoveStopWords**: loads a list of stop words, filters article text, and saves cleaned files. Uses createStopWordsList, filterArticle, and saveCleanedArticle methods.
 - **BasicStats**: counts total and unique words from cleaned files. Uses readCleanedFile and countUnique methods.
 - **FrequencyRanking**: counts and sorts words by frequency using basic loops and arrays. Uses a rank method, which bubble sorts the files.
-- **Main**: runs the program for one topic folder, calling the other three classes.
+- **RichVocab**:
+- **AttitudeScorder**:
+- **RepeatWords**:
 
 ## How to Run:
 - **Step 1** -- Download Zip File

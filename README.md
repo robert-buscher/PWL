@@ -1,8 +1,8 @@
 # Programming Workshop Lab
 
 ## Team
-### **Robert Buscher**: Main.java, FrequencyRanking.java, ReadMe
-### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, UML diagram
+### **Robert Buscher**: Main.java, FrequencyRanking.java, RichVocab.java, README.md
+### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, AttitudeScorer.java, UML diagram
 
 ## Classes and Methods
 - **RemoveStopWords**: loads a list of stop words, filters article text, and saves cleaned files. Uses createStopWordsList, filterArticle, and saveCleanedArticle methods.

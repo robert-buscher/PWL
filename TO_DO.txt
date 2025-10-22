@@ -1,6 +1,6 @@
 1) Code for what article uses the richest vocab (RichVocab.java) - RJ 
 2) Code for the list of words that were repeated the most for each article (RepeatWords.java) - Nick
-3) Code for Positive vs. Negative articles (AttitudeScorer.java) - Nick 
+3) Code for Positive vs. Negative articles (LexiconScore.java) - Nick 
 4) Update Main.java to include all new functions - RJ
 5) Update README.md - RJ
 6) Update UML - Nick

@@ -1,1 +1,4 @@
-
+1) Code for what article uses the richest vocab (RichVocab.java)
+2) Code for the list of words that were repeated the most for each article (RepeatWords.java)
+3) Code for Positive vs. Negative articles (PositiveVsNegative.java)
+4) Update README.md

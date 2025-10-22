@@ -35,4 +35,25 @@ public class LexiconScore
         } 
         return lexiconScores;
     }
+
+    public static void analyzeArticle(ArrayList<String> filteredArticle) 
+    {
+        ArrayList<LexiconScore> lexiconScores = createLexiconScoreList();
+        int matchedWordCount = 0;
+        double totalScore = 0.0;
+
+        for (String articleWord : filteredArticle) 
+        {
+            for (LexiconScore attitudeWord : lexiconScores) 
+            {
+                if (articleWord.equalsIgnoreCase(attitudeWord.getWord())) 
+                {
+                    matchedWordCount++;
+                    totalScore += attitudeWord.getScore();
+                }
+            }
+        }
+        System.out.println("Words that express positive/negative attitude: " + matchedWordCount);
+        System.out.println("Overall attitude score: " + totalScore);
+    }
 }

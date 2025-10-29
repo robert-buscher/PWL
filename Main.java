@@ -67,5 +67,8 @@ public class Main
         // frequency ranking
         System.out.println("\nTop words by frequency:");
         FrequencyRanking.rank(allWords);
+        
+        System.out.println("\nLexicon Scores");
+        LexiconScore.analyzeArticle(allWords);
     }
 }

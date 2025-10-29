@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class LexiconScore
 {
     private String word;
@@ -21,7 +24,8 @@ public class LexiconScore
 
     public static ArrayList<LexiconScore> createLexiconScoreList() 
     {
-        ArrayList<lexiconScore> lexiconScores = new ArrayList<>();
+        ArrayList<LexiconScore> lexiconScores = new ArrayList<>();
+        Scanner scan = new Scanner(LexiconScore.class.getResourceAsStream("lexicon-scores.txt"));
         while (scan.hasNextLine()) 
         {
             String line = scan.nextLine().trim();

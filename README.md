@@ -23,5 +23,3 @@
 
 ## UML Diagram:
 ![Screenshot 2025-10-15 at 1 05 07 PM 3](https://github.com/user-attachments/assets/fb5dcd9a-0071-434b-9079-866222d56b1f)
-<img width="862" height="603" alt="Screenshot 2025-10-28 at 3 50 37 PM" src="https://github.com/user-attachments/assets/903b0ae1-db3f-44f6-83e5-f988033cc6d1" />
-

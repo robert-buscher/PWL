@@ -42,24 +42,4 @@ public class RemoveStopWords
 
         System.out.println("Preprocessed file: " + newFilePath);
     }
-    
-    public static void main(String[] args)
-    {
-        try 
-        {
-            String stopWordsPath = "stopwords.txt";
-            ArrayList<String> stopWords = createStopWordsList(stopWordsPath);
-            String[] articlePaths = {}; // add file names here
-
-            for (String article : articlePaths) 
-            {
-                ArrayList<String> filtered = filterArticle(article, stopWords);
-                saveCleanedArticle(article, filtered);
-            }
-        } 
-        catch (Exception e) 
-        {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
 }

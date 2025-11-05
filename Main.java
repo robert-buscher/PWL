@@ -67,8 +67,12 @@ public class Main
         // frequency ranking
         System.out.println("\nTop words by frequency:");
         FrequencyRanking.rank(allWords);
-        
+
+        // attitude analyzer
         System.out.println("\nLexicon Scores");
         LexiconScore.analyzeArticle(allWords);
+
+        // repeat words list
+        RepeatWords.printMostRepeatedWords(allWords);
     }
 }

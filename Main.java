@@ -73,6 +73,8 @@ public class Main
         LexiconScore.analyzeArticle(allWords);
 
         // repeat words list
-        RepeatWords.printMostRepeatedWords(allWords);
+        RepeatWords.printMostRepeatedWords(article1_cleaned.txt);
+        RepeatWords.printMostRepeatedWords(article2_cleaned.txt);
+        RepeatWords.printMostRepeatedWords(article3_cleaned.txt);
     }
 }

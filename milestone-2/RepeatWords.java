@@ -2,7 +2,7 @@ import java.util.*;
 
 public class RepeatWords
 {
-    public static void printMostRepeatedWords(ArrayList<String> filteredWords, int topN)
+    public static void printMostRepeatedWords(ArrayList<String> filteredWords)
     {
         ArrayList<String> uniqueWords = new ArrayList<>();
         ArrayList<Integer> counts = new ArrayList<>();
@@ -38,8 +38,8 @@ public class RepeatWords
             }
         }
 
-        System.out.println("Top " + topN + " most repeated words:");
-        for (int i = 0; i < Math.min(topN, uniqueWords.size()); i++)
+        System.out.println("\nTop 3 Most Repeated Words:");
+        for (int i = 0; i < Math.min(3, uniqueWords.size()); i++)
         {
             System.out.println(uniqueWords.get(i) + ": " + counts.get(i));
         }

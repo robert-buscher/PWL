@@ -1,13 +1,34 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class RepeatWords
 {
-    public static void printMostRepeatedWords(ArrayList<String> filteredWords)
+    public static void printMostRepeatedWords(String filePath)
     {
+        ArrayList<String> words = new ArrayList<>();
+
+        try (Scanner scan = new Scanner(new File(filePath))) 
+        {
+            while (scan.hasNext()) 
+            {
+                String word = scan.next(); 
+                if (!word.isEmpty()) 
+                {
+                    words.add(word);
+                }
+            }
+        } 
+        catch (FileNotFoundException e) 
+        {
+            System.out.println("File not found: " + filePath);
+            return;
+        }
+
         ArrayList<String> uniqueWords = new ArrayList<>();
         ArrayList<Integer> counts = new ArrayList<>();
 
-        for (String word : filteredWords)
+        for (String word : words)
         {
             int index = uniqueWords.indexOf(word);
             if (index == -1)
@@ -38,8 +59,8 @@ public class RepeatWords
             }
         }
 
-        System.out.println("\nTop 3 Most Repeated Words:");
-        for (int i = 0; i < Math.min(3, uniqueWords.size()); i++)
+        System.out.println("\nTop 10 Most Repeated Words in " + filePath + ":");
+        for (int i = 0; i < Math.min(10, uniqueWords.size()); i++)
         {
             System.out.println(uniqueWords.get(i) + ": " + counts.get(i));
         }

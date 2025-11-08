@@ -22,4 +22,4 @@
 **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1
 
 ## UML Diagram:
-![Screenshot 2025-10-15 at 1 05 07 PM 3](https://github.com/user-attachments/assets/fb5dcd9a-0071-434b-9079-866222d56b1f)
+<img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />

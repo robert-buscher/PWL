@@ -23,3 +23,7 @@
 
 ## UML Diagram:
 <img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />
+
+## Sentiment Analysis Testing Results:
+<img width="375" height="425" alt="Screenshot 2025-11-10 at 11 26 55 AM" src="https://github.com/user-attachments/assets/35ffb3e3-7214-4420-878c-5110c68cd258" />
+<img width="335" height="500" alt="Screenshot 2025-11-10 at 11 27 06 AM" src="https://github.com/user-attachments/assets/bc7e1093-dba4-417f-9f82-2e63b86d6fa6" />

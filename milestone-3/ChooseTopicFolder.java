@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public static File chooseTopicFolder() 
 {
     File library = new File("txtFiles");

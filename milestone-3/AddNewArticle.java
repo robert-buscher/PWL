@@ -1,29 +1,33 @@
 import java.io.*;
+import java.nio.*;
 import java.util.*;
 
-public static void addNewArticle(File topicFolder) 
+public class AddNewArticle
 {
-    Scanner sc = new Scanner(System.in);
-
-    System.out.print("Enter full path of new .txt article: ");
-    String newPath = sc.nextLine().trim();
-
-    File newArticle = new File(newPath);
-
-    if (!newArticle.exists()) 
+    public static void addNewArticle(File topicFolder) 
     {
-        System.out.println("File not found.");
-        return;
-    }
+        Scanner sc = new Scanner(System.in);
 
-    File dest = new File(topicFolder, newArticle.getName());
-    try 
-    {
-        Files.copy(newArticle.toPath(), dest.toPath());
-        System.out.println("Article added to topic: " + topicFolder.getName());
-    } 
-    catch (IOException e) 
-    {
-        System.out.println("Failed to copy file: " + e.getMessage());
+        System.out.print("Enter full path of new .txt article: ");
+        String newPath = sc.nextLine().trim();
+
+        File newArticle = new File(newPath);
+
+        if (!newArticle.exists()) 
+        {
+            System.out.println("File not found.");
+            return;
+        }
+
+        File destination = new File(topicFolder, newArticle.getName());
+        try 
+        {
+            Files.copy(newArticle.toPath(), destination.toPath());
+            System.out.println("Article added to topic: " + topicFolder.getName());
+        } 
+        catch (IOException e) 
+        {
+            System.out.println("Failed to copy file: " + e.getMessage());
+        }
     }
 }

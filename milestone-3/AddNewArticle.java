@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public static void addNewArticle(File topicFolder) 
 {
     Scanner sc = new Scanner(System.in);

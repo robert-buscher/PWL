@@ -1,10 +1,10 @@
 public static File chooseTopicFolder() 
 {
-    File library = new File("topics");
+    File library = new File("txtFiles");
 
     if (!library.exists() || !library.isDirectory()) 
     {
-        System.out.println("No topics folder found. Create a folder named 'topics'.");
+        System.out.println("No txtFiles folder found. Create a folder named 'txtFiles'.");
         return null;
     }
 

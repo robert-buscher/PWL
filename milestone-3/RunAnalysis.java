@@ -1,9 +1,10 @@
 import java.io.*;
+import java.nio.*;
 import java.util.*;
 
 public class RunAnalysis 
 {    
-    public static void main(String[] args) 
+    public void RunAnalysis
     {
         Scanner sc = new Scanner(System.in);
 
@@ -103,3 +104,4 @@ public class RunAnalysis
             RepeatWords.printMostRepeatedWords(filteredLists.get(i));
         }
     }
+}

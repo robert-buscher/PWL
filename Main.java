@@ -1,165 +1,54 @@
-import java.io.*;
-import java.util.*;
-
-public class Main 
+public static void main(String[] args) 
 {
-    /** Temporarily made main a note for edits
-    
-    public static void main(String[] args) 
+    Scanner sc = new Scanner(System.in);
+
+    while (true) 
     {
-        Scanner sc = new Scanner(System.in);
+        System.out.println("\n==== TEXT ANALYSIS SOFTWARE ====");
+        System.out.println("1. Select a topic and run analysis");
+        System.out.println("2. Add a new article to a topic");
+        System.out.println("3. Exit");
+        System.out.print("Enter choice: ");
 
-        System.out.print("Enter topic folder path: \n");
-        String folderPath = sc.nextLine().trim();
-        File folder = new File(folderPath);
-        if (!folder.exists() || !folder.isDirectory()) 
-        {
-            System.out.println("Folder not found.");
-            return;
-        }
-
-        ArrayList<String> stopWords;
+        int option = -1;
         try 
         {
-            stopWords = RemoveStopWords.createStopWordsList("stopwords.txt");
+            option = Integer.parseInt(sc.nextLine());
         } 
-        catch (Exception e) 
+        catch (NumberFormatException e) 
         {
-            System.out.println("Could not load stopwords.txt: " + e.getMessage());
-            return;
+            System.out.println("Invalid input. Enter a number.");
+            continue;
         }
 
-        ArrayList<String> allWords = new ArrayList<>();
-        File[] files = folder.listFiles();
-        if (files == null || files.length == 0) {
-            System.out.println("No files found in folder.");
-            return;
+        if (option == 3) 
+        {
+            System.out.println("Exiting program.");
+            break;
         }
 
-        ArrayList<String> articleNames = new ArrayList<>();
-        ArrayList<Double> richnessScores = new ArrayList<>();
-        ArrayList<ArrayList<String>> filteredLists = new ArrayList<>();
+        File topicFolder = ChooseTopicFolder.chooseTopicFolder();
 
-        for (File f : files) 
+        if (topicFolder == null) 
         {
-            if (f.isFile() && f.getName().toLowerCase().endsWith(".txt")) 
-            {
-                try 
-                {
-                    ArrayList<String> filtered = RemoveStopWords.filterArticle(f.getPath(), stopWords);
-                    allWords.addAll(filtered);
-
-                    filteredLists.add(filtered);
-
-                    double richness = RichVocab.vocabRichness(filtered);
-                    articleNames.add(f.getName());
-                    richnessScores.add(richness);
-                } 
-                catch (Exception e) 
-                {
-                    System.out.println("Skipping " + f.getName() + " (" + e.getMessage() + ")");
-                }
-            }
-        }
-        if (allWords.isEmpty()) 
-        {
-            System.out.println("No tokens found after filtering.");
-            return;
+            System.out.println("No valid topic selected.");
+            continue;
         }
 
-        // basic stats 
-        int total = allWords.size();
-        int unique = BasicStats.countUnique(allWords);
-        System.out.println("\nTopic folder: " + folderPath);
-        System.out.println("Total words (after stop-word removal): " + total);
-        System.out.println("Unique words (after stop-word removal): " + unique);
-
-        // richness score overall
-        double richness = RichVocab.vocabRichness(allWords);
-        System.out.println("\nVocabulary Richness Score: " + richness);   
-
-        // frequency ranking
-        System.out.println("\nTop words by frequency:");
-        FrequencyRanking.rank(allWords);
-
-        // attitude analyzer
-        System.out.println("\nLexicon Scores");
-        LexiconScore.analyzeArticle(allWords);
-
-        // richest vocab
-        double maxRich = Collections.max(richnessScores);
-        int richestIndex = richnessScores.indexOf(maxRich);
-
-        // richest vocab analysis
-        System.out.println("\nVocabulary Richness Comparison");
-        for (int i = 0; i < articleNames.size(); i++) 
+        switch (option) 
         {
-            System.out.println(articleNames.get(i) + ": " + richnessScores.get(i));
-        }
-        System.out.println("\nArticle with Richest Vocabulary: " + articleNames.get(richestIndex)); 
-
-        // most repeated words per article
-        for (int i = 0; i < articleNames.size(); i++) 
-        {
-            System.out.println("\nTop 10 Most Repeated Words in " + articleNames.get(i) + ":");
-            RepeatWords.printMostRepeatedWords(filteredLists.get(i));
-        }
-    }
-    **/
-
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
-
-        while (true) 
-        {
-            System.out.println("\n==== TEXT ANALYSIS SOFTWARE ====");
-            System.out.println("1. Select a topic and run analysis");
-            System.out.println("2. Add a new article to a topic");
-            System.out.println("3. Exit");
-            System.out.print("Enter choice: ");
-
-            int option = -1;
-            try 
-            {
-                option = Integer.parseInt(sc.nextLine());
-            } 
-            catch (NumberFormatException e) 
-            {
-                System.out.println("Invalid input. Enter a number.");
-                continue;
-            }
-
-            if (option == 3) 
-            {
-                System.out.println("Exiting program.");
+            case 1:
+                System.out.println("\nRunning analysis on topic: " + topicFolder.getName());
+                RunAnalysis.runAnalysis(topicFolder);
                 break;
-            }
 
-            File topicFolder = chooseTopicFolder();
-            if (topicFolder == null) 
-            {
-                System.out.println("No valid topic selected.");
-                continue;
-            }
+            case 2:
+                AddNewArticle.addNewArticle(topicFolder);
+                break;
 
-            switch (option) 
-            {
-                case 1:
-                    // RUN ANALYSIS  
-                    System.out.println("\nRunning analysis on topic: " + topicFolder.getName());
-                    runAnalysis(topicFolder);  
-                    break;
-
-                case 2:
-                    // ADD NEW ARTICLE
-                    addNewArticle(topicFolder);
-                    break;
-
-                default:
-                    System.out.println("Invalid choice. Please choose 1–3.");
-            }
+            default:
+                System.out.println("Invalid choice. Please choose 1–3.");
         }
-        sc.close();
     }
+    sc.close();
 }

@@ -1,8 +1,8 @@
 # Programming Workshop Lab
 
 ## Team
-### **Robert Buscher**: Main.java, FrequencyRanking.java, RichVocab.java, README.md
-### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, AttitudeScorer.java, RepeatWords.java, UML diagram
+### **Robert Buscher**: Main.java, RunAnalysis.java, FrequencyRanking.java, RichVocab.java, ChooseTopicFolder.java, README.md
+### **Nicholas Tauro**: RemoveStopWords.java, BasicStats.java, AttitudeScorer.java, RepeatWords.java, AddNewArticle.java, UML diagram
 
 ## Classes and Methods
 - **Main**: runs the program for one topic folder, calling the other classes.
@@ -15,7 +15,7 @@
 
 ## How to Run:
 - **Step 1** -- Download Zip File
-- **Step 2** -- Using your choice of IDE, run the Main Class
+- **Step 2** -- Using your choice of IDE, run the RunAnalysis Class
 - **Step 3** -- Enter file path
 - **Examples**:
 - **macOS**: /Users/rj/Documents/PWL-main/txtFiles/topic1

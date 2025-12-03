@@ -20,6 +20,7 @@
 - **Step 2** -- Using your choice of IDE, run the Main Class
 - **Step 3** -- Choose 1 for a breakdown of the pre-downloaded articles, Choose 2 to add an article of your own
 - **Step 4** -- If adding an article of your own, see examples below for how to enter the file path
+- **Step 5** -- When finished, press 3 to close the program
 - **Examples**:
 - **macOS**: /Users/rj/Documents/PWL-main/txtFiles/topic1
 - **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1

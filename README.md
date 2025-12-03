@@ -26,9 +26,18 @@
 - **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1
 
 ## Coupling and Cohesion Analysis:
+- We aimed for Low Coupling and High Cohesion and generally accomplished that. The one major drawback of low coupling is our RunAnalysis class. Because it pulls from all of the other classes, it is highly coupled. Because every class besides Main and RunAnalysis is completely separated from each other, we are comfortable saying that we achieved low coupling and high cohesion. The workflow is also linear as every class does its work and then RunAnalysis draws information from them.
+- Main --> Responsible for the interface
+- RunAnalysis --> Responsible for controlling all of the classes listed below
+- RemoveStopWords, BasicStats, FrequencyRanking, RichVocab, RepeatWords, AttitudeScorer --> Single analysis of one specific piece of the project.
+- LexiconScore --> Data holder object
+- ChooseTopicFolder, AddNewArticle --> Maintain the user choice options and logic. 
 
 ## How We Would Refactor:
-
+1. Tighter meanings/responsibilities of each of the classes
+2. A standardized method for data structure and output
+3. Move classes into packages as opposed to milestone folders
+4. Create a File Utility helper class
 
 ## UML Diagram:
 <img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />

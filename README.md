@@ -28,6 +28,7 @@
 ## UML Diagram:
 <img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />
 
-## Sentiment Analysis Testing Results:
-<img width="375" height="425" alt="Screenshot 2025-11-10 at 11 26 55 AM" src="https://github.com/user-attachments/assets/35ffb3e3-7214-4420-878c-5110c68cd258" />
-<img width="335" height="500" alt="Screenshot 2025-11-10 at 11 27 06 AM" src="https://github.com/user-attachments/assets/bc7e1093-dba4-417f-9f82-2e63b86d6fa6" />
+## Testing Results:
+<img width="667" height="740" alt="Screenshot 2025-12-03 at 11 15 24 AM" src="https://github.com/user-attachments/assets/2b6f712d-ee01-4bc8-943d-3cba2ae7c774" />
+<img width="300" height="740" alt="Screenshot 2025-12-03 at 11 18 24 AM" src="https://github.com/user-attachments/assets/7bfb4f35-bd5b-40ef-b18d-58138e072b74" />
+<img width="300" height="69" alt="Screenshot 2025-12-03 at 11 18 40 AM" src="https://github.com/user-attachments/assets/bdb9761c-1f77-43de-be2d-578bcd61ce76" />

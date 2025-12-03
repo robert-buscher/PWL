@@ -25,6 +25,11 @@
 - **macOS**: /Users/rj/Documents/PWL-main/txtFiles/topic1
 - **Windows**: \Users\rj\PWL-main\Documents\txtFiles\topic1
 
+## Coupling and Cohesion Analysis:
+
+## How We Would Refactor:
+
+
 ## UML Diagram:
 <img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />
 

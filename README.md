@@ -40,7 +40,7 @@
 4. Create a File Utility helper class
 
 ## UML Diagram:
-<img width="670" height="377" alt="Screenshot 2025-11-08 at 1 53 06 PM" src="https://github.com/user-attachments/assets/9680567b-e122-4012-9aab-bf252b9cacf9" />
+<img width="682" height="388" alt="Screenshot 2025-12-03 at 11 37 26 AM" src="https://github.com/user-attachments/assets/ff925131-bd6c-4010-8e21-b794235928db" />
 
 ## Testing Results:
 <img width="667" height="740" alt="Screenshot 2025-12-03 at 11 15 24 AM" src="https://github.com/user-attachments/assets/2b6f712d-ee01-4bc8-943d-3cba2ae7c774" />
